@@ -6,34 +6,52 @@
   <title>GameUXKit – AI UX Tools for Game Developers</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: system-ui, sans-serif;
       padding: 2em;
-      max-width: 800px;
+      max-width: 700px;
       margin: auto;
+      line-height: 1.5;
+      background: #f9f9f9;
+      color: #111;
     }
-    h1 { color: #111; }
-    .cta {
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+    h2 {
       margin-top: 2em;
+    }
+    .cta {
+      margin-top: 1.5em;
+      display: inline-block;
       background: #111;
       color: white;
-      padding: 1em;
-      display: inline-block;
+      padding: 0.75em 1.5em;
       text-decoration: none;
       border-radius: 4px;
+      font-weight: bold;
     }
     input[type="email"] {
       padding: 0.5em;
       margin-top: 1em;
       width: 100%;
       max-width: 400px;
+      box-sizing: border-box;
+      font-size: 1em;
+    }
+    form {
+      margin-top: 1em;
     }
   </style>
 </head>
 <body>
   <h1>GameUXKit</h1>
-  <p>AI-powered tools to help indie game devs and small studios create better onboarding, UX copy, and player flow — fast.</p>
-  <p>No UX team? No problem.</p>
-  <h2>Coming soon – get notified at launch:</h2>
+  <p><strong>AI-powered UX tools for indie game devs and small studios.</strong></p>
+  <p>Create better onboarding, UX copy, and player flow — fast. No UX team required.</p>
+
+  <h2>🚀 Coming Soon</h2>
+  <p>We’re building tools to make game UX design faster and smarter. Want early access and updates?</p>
+
   <form action="https://formspree.io/f/your-form-id" method="POST">
     <input type="email" name="email" placeholder="you@example.com" required />
     <button class="cta" type="submit">Notify Me</button>
