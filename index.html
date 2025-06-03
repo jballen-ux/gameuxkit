@@ -4,50 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GameUXKit – AI-Powered Game UX/UI Tools</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Inter', sans-serif;
       background: #0e0e10;
       color: #f4f4f4;
       margin: 0;
       padding: 0;
+    }
+
+    header {
+      padding: 4rem 2rem 2rem;
       text-align: center;
     }
-    header {
-      padding: 4rem 2rem;
-    }
+
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    p {
-      font-size: 1.25rem;
+
+    p.lead {
+      font-size: 1.2rem;
+      color: #ccc;
       margin-bottom: 2rem;
     }
-    form {
-      display: inline-block;
-      margin-top: 2rem;
+
+    .hero-image {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
+
+    form {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
     input[type="email"] {
       padding: 0.75rem 1rem;
       font-size: 1rem;
       border: none;
-      border-radius: 4px;
-      margin-right: 0.5rem;
+      border-radius: 6px;
       width: 250px;
     }
+
     button.cta {
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
-      background-color: #ff4747;
+      background: #ff4747;
       color: white;
       border: none;
-      border-radius: 4px;
+      border-radius: 6px;
       cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
     }
+
+    button.cta:hover {
+      background-color: #ff6565;
+      transform: scale(1.05);
+    }
+
+    .benefits {
+      background: #1a1a1d;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .benefits h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .benefits li {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
     .footer {
       margin-top: 3rem;
+      padding: 2rem;
       font-size: 0.9rem;
+      text-align: center;
       color: #888;
     }
   </style>
@@ -56,22 +117,27 @@
 
   <header>
     <h1>GameUXKit</h1>
-    <p>The first AI toolkit for crafting better UX & UI in games — fast.</p>
-    <p>🚀 Get early access to our AI copy assistant, UI onboarding booster, and wireframe kits.</p>
+    <p class="lead">AI tools to help game designers build intuitive, beautiful UI faster.</p>
+    <img class="hero-image" src="https://via.placeholder.com/700x300.png?text=Your+AI+Game+UX+Toolkit" alt="Hero Product Image" />
 
-   <form action="https://formspree.io/f/mjkrvegr" method="POST">
-  <label for="email">Your email:</label><br />
-  <input type="email" name="email" id="email" required /><br /><br />
-
-  <label for="message">Your message:</label><br />
-  <textarea name="message" id="message" rows="4" cols="40"></textarea><br /><br />
-
-  <button type="submit">Send</button>
-</form>
+    <form action="https://formspree.io/f/mjkrvegr" method="POST">
+      <input type="email" name="email" placeholder="you@example.com" required />
+      <button class="cta" type="submit">Notify Me</button>
+    </form>
   </header>
 
+  <section class="benefits">
+    <h2>✨ What You Get</h2>
+    <ul>
+      <li>🧠 AI-generated onboarding flows</li>
+      <li>✍️ Game copy assistant for buttons, tutorials, and popups</li>
+      <li>📐 UX wireframe kits for Unity & Unreal</li>
+      <li>🎮 Designed by veteran game UI/UX pros</li>
+    </ul>
+  </section>
+
   <div class="footer">
-    © 2025 GameUXKit. All rights reserved.
+    © 2025 GameUXKit – Built with ❤️ for game devs. | <a href="mailto:hello@gameuxkit.com" style="color:#888;">Contact</a>
   </div>
 
 </body>
