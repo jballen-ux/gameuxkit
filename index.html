@@ -45,6 +45,38 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
+    .features {
+      padding: 1rem 2rem 2rem;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    .features li {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+      color: #ddd;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .features li::before {
+      content: "✔";
+      color: #00e676;
+      position: absolute;
+      left: 0;
+    }
+
     form {
       margin-top: 2rem;
       display: flex;
@@ -118,7 +150,18 @@
   <header>
     <h1>GameUXKit</h1>
     <p class="lead">AI tools to help game designers build intuitive, beautiful UI faster.</p>
-    <img class="hero-image" src="https://via.placeholder.com/700x300.png?text=Your+AI+Game+UX+Toolkit" alt="Hero Product Image" />
+    <img class="hero-image" src="assets/hero.png" alt="GameUXKit Hero Image" />
+
+    <div class="features">
+      <h2>Coming Features</h2>
+      <ul>
+        <li>AI-generated wireframes for menus, inventories, HUDs</li>
+        <li>Smart onboarding flow generator</li>
+        <li>Copywriting assistant for game UI text</li>
+        <li>Unity and Unreal export support (planned)</li>
+        <li>Curated UX best practices for faster iteration</li>
+      </ul>
+    </div>
 
     <form action="https://formspree.io/f/mjkrvegr" method="POST">
       <input type="email" name="email" placeholder="you@example.com" required />
